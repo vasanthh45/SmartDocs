@@ -17,10 +17,13 @@ The application provides a FastAPI backend and a simple web interface built with
 
 ## Screenshots
 
-### Banking FAQ Search
+### SmartDocs Home — Search Interface
 
-![SmartDocs Banking FAQ Search](screenshots/smartdocs-search.png)
+![SmartDocs Home and Search Bar](screenshots/smartdocs-home.png)
 
+### Banking FAQ Search Results
+
+![SmartDocs Banking FAQ Search Results](screenshots/smartdocs-search.png)
 ## Technology Stack
 
 - Python
