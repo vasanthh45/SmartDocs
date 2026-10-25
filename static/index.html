@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartDocs | Banking FAQ Search</title>
+
+    <!-- Change the version number when updating CSS to avoid cached files -->
+    <link rel="stylesheet" href="/static/style.css?v=3">
+
+    <!-- defer makes sure HTML elements are ready before JavaScript runs -->
+    <script src="/static/script.js?v=3" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="brand" aria-label="SmartDocs home">
+                <span class="brand-icon">S</span>
+                <span>SmartDocs</span>
+            </a>
+
+            <span class="header-label">BANKING KNOWLEDGE BASE</span>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <section class="hero">
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                SMART SEARCH
+            </div>
+
+            <h1>Banking answers,<br><span>without the searching.</span></h1>
+
+            <p class="hero-description">
+                Ask a banking question in your own words. SmartDocs searches
+                its knowledge base and finds the most relevant answers.
+            </p>
+
+            <form id="search-form" class="search-form">
+                <label for="question" class="visually-hidden">
+                    Enter your banking question
+                </label>
+
+                <input
+                    type="text"
+                    id="question"
+                    name="question"
+                    placeholder="e.g. How do I reset my net banking password?"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit" id="search-button">
+                    <span id="button-label">Search</span>
+                    <span aria-hidden="true">→</span>
+                </button>
+            </form>
+
+            <p class="search-hint">
+                Search across banking FAQs using text similarity.
+            </p>
+        </section>
+
+        <section class="stats" aria-label="Search information">
+            <div class="stat-item">
+                <span class="stat-value">1,000</span>
+                <span class="stat-label">Banking FAQs</span>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <span class="stat-value">TF-IDF</span>
+                <span class="stat-label">Search method</span>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <span class="stat-value">Top 5</span>
+                <span class="stat-label">Matching results</span>
+            </div>
+        </section>
+
+        <!-- JavaScript scrolls to this section after a search -->
+        <section
+            id="results-section"
+            class="results-section"
+            aria-labelledby="results-heading"
+        >
+            <div class="section-heading">
+                <div>
+                    <p class="section-eyebrow">SEARCH RESULTS</p>
+                    <h2 id="results-heading">Relevant answers</h2>
+                    <p class="section-description">
+                        The closest matches to your question.
+                    </p>
+                </div>
+
+                <span id="result-count" class="result-count">Ready to search</span>
+            </div>
+
+            <!-- Loading, empty and error messages appear here -->
+            <div
+                id="message"
+                class="message"
+                role="status"
+                aria-live="polite"
+                hidden
+            >
+                <span id="message-symbol" class="message-symbol" aria-hidden="true">
+                    ✦
+                </span>
+
+                <div>
+                    <strong id="message-title"></strong>
+                    <p id="message-description"></p>
+                </div>
+            </div>
+
+            <!-- Search results are inserted here -->
+            <div id="results" class="results-list"></div>
+        </section>
+
+        <footer class="site-footer">
+            <span>SmartDocs — Banking FAQ Search System</span>
+            <span>Powered by TF-IDF and cosine similarity</span>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+source_index_0_based,expected_section,query,expected_question
+0,Basic Accounts,I want an account where I can save money and earn some interest.,What is a Savings Account?
+5,Basic Accounts,What happens if a cheque payment is rejected by the bank?,What happens when a cheque bounces?
+21,Basic Accounts,My bank account has become inactive. How can I make it active again?,How do I reactivate a dormant account?
+24,Basic Accounts,Which papers should I provide when creating a new bank account?,What documents are needed to open a bank account?
+49,Basic Accounts,I no longer need this account. What is the process to shut it down?,How can I close a bank account?
+72,Basic Accounts,Where can I look up the IFSC for my bank branch?,How do I find my IFSC code?
+89,Basic Accounts,How can I replace the phone number registered with my bank?,How do I update my mobile number in a bank account?
+112,Digital Banking,What does a debit card let me do?,What is a debit card?
+122,Digital Banking,Can you explain UPI payments?,What is UPI?
+138,Digital Banking,How long should an NEFT money transfer usually take?,How long does NEFT take?
+140,Digital Banking,Is there a daily cap on how much I can send using UPI?,What is a UPI limit per day?
+163,Digital Banking,"The ATM did not give me cash, but what if the transaction failed?",What is a failed ATM transaction?
+201,Digital Banking,Can I open a fixed deposit through online banking?,What is an online fixed deposit?
+220,Loans & Interest,What is an unsecured personal loan used for?,What is a personal loan?
+285,Loans & Interest,What factors decide whether I qualify for a personal loan?,What is a personal loan eligibility?
+303,Loans & Interest,Can I borrow money against security through an overdraft facility?,What is a secured overdraft?
+322,Operations & Security,What does a bank check during KYC verification?,What is KYC verification?
+514,Customer Service,My debit card is missing. How do I stop anyone from using it?,How do I block my debit card?
+515,Customer Service,I forgot my internet banking login password. How can I reset it?,How do I reset my net banking password?
+547,Customer Service,Which documents do I need to submit for a personal loan application?,What documents are needed for a personal loan?
