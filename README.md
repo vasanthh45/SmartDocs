@@ -15,6 +15,12 @@ The application provides a FastAPI backend and a simple web interface built with
 - Evaluate search performance using Top-1 Accuracy, Recall@5, and Mean Reciprocal Rank (MRR).
 - Compare TF-IDF with an experimental Word2Vec implementation.
 
+## Screenshots
+
+### Banking FAQ Search
+
+![SmartDocs Banking FAQ Search](screenshots/smartdocs-search.png)
+
 ## Technology Stack
 
 - Python
@@ -57,7 +63,7 @@ This implementation is retained as an experiment. It is not the primary search e
 
 ## Dataset
 
-File: `banking_knowledge_base_1000.csv`
+**File:** `banking_knowledge_base_1000.csv`
 
 The dataset contains 1,000 banking FAQ entries with these columns:
 
@@ -80,7 +86,10 @@ SmartDocs/
 ├── evaluation_queries.csv
 ├── banking_knowledge_base_1000.csv
 ├── requirements.txt
+├── README.md
 ├── .gitignore
+├── screenshots/
+│   └── smartdocs-search.png
 └── static/
     ├── index.html
     ├── style.css
@@ -221,16 +230,6 @@ Potential future work includes:
 - Comparing alternative approaches using the same evaluation dataset.
 
 These are future improvements and have not been implemented or evaluated as part of the current results.
-
-## Screenshot
-
-Add a screenshot of the running application here.
-
-For example:
-
-`![SmartDocs application screenshot](screenshots/smartdocs-home.png)`
-
-The screenshot file must be added to the repository before this image will display.
 
 ## Current Status
 
